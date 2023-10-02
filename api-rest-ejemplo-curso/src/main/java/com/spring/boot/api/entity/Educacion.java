@@ -45,13 +45,12 @@ public class Educacion implements Serializable{
 	public Educacion() {
 		super();
 	}
-
-	public Integer getId_educacion() {
+	public Integer getIdEdu() {
 		return idEdu;
 	}
 
-	public void setId_educacion(Integer id_educacion) {
-		this.idEdu = id_educacion;
+	public void setIdEdu(Integer idEdu) {
+		this.idEdu = idEdu;
 	}
 
 	public String getTitulo() {

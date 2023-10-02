@@ -47,7 +47,7 @@ public class UsuarioRestController {
 	public Usuario updateUsuario(@RequestBody Usuario usuario, @PathVariable Integer id){
 		Usuario usuarioActual = usuarioService.getUsuarioId(id);
 		usuarioActual.setCorreo(usuario.getCorreo());
-		usuarioActual.setContraseña(usuario.getContraseña());
+		usuarioActual.setContrasena(usuario.getContrasena());
 		usuarioActual.setUsuario(usuario.getUsuario());
 		return usuarioService.saveUsuario(usuarioActual);
 	}

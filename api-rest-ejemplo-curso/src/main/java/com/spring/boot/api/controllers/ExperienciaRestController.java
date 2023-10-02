@@ -49,7 +49,7 @@ public class ExperienciaRestController {
 		return expService.saveExp(exp);
 	}
 
-	@PutMapping("/exp/:{id}")
+	@PutMapping("/exp/{id}")
 	@ResponseStatus(HttpStatus.OK)
 	public Experiencia updateExp(@RequestBody Experiencia exp, @PathVariable Integer id) {
 		Experiencia expA = expService.getExp(id);

@@ -49,7 +49,7 @@ public class ProjectosRestController {
 		return pjService.savePj(pj);
 	}
 	
-	@PutMapping("/proyecto")
+	@PutMapping("/proyecto/{id}")
 	@ResponseStatus(HttpStatus.OK)
 	public Proyectos updatePj(@RequestBody Proyectos pj, @PathVariable Integer id) {
 		Proyectos pjActual = pjService.getPjId(id);
