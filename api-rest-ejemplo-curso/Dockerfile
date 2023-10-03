@@ -1,4 +1,4 @@
 FROM amazoncorretto:11
 MAINTAINER Miguel_Alejandro_Barconte
-COPY api-ejemplo-curso/target/api-rest-ejemplo-curso-0.0.1-SNAPSHOT.jar api-rest-ejemplo-curso-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","/api-rest-ejemplo-curso-0.0.1-SNAPSHOT.jar]
+COPY target/api-rest-ejemplo-curso-0.0.1-SNAPSHOT.jar api-rest-ejemplo-curso-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/api-rest-ejemplo-curso-0.0.1-SNAPSHOT.jar"]
